@@ -1,0 +1,43 @@
+
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+    </div>
+    <script> 
+
+        let divPai = document.querySelector('#pai');
+        let irmao = document.createElement('div');
+        irmao.id  = 'novoIrmao';
+        divPai.appendChild(irmao);
+
+        let ondeEsta = document.querySelector('#elementoOndeVoceEsta');
+        let elementoNovo = document.createElement('div');
+        elementoNovo.id = 'novoElemento';
+        ondeEsta.appendChild(elementoNovo);
+
+        let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+        let neto = document.createElement('div');
+        neto.id = 'neto';
+        primeiroFilhoDoFilho.appendChild(neto);
+
+        document.querySelector("#neto").parentNode.parentNode.nextElementSibling;
+    
+        listaDiv = documento.querySelectorAll('div');
+
+        for (index in listaDiv) {
+
+            elementoRemove = listaDiv[index];
+
+            if (elementoNovo.id != 'pai' && elementoNovo.id != 'elementoOndeVoceEsta' && elementoNovo.id != 'primeiroFilhoDoFilho') {
+
+                
+        }
+    </script>
