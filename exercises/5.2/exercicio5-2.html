@@ -58,9 +58,9 @@
   <body>
     <script>
       const bodyDoc = document.querySelector('body');
-      let h1DOc = document.createElement('h1');
-      h1DOc.innerText = 'Exercício 5.2 - JavaScript DOM';
-      bodyDoc.appendChild(h1DOc);
+      let h1Doc = document.createElement('h1');
+      h1Doc.innerText = 'Exercício 5.2 - JavaScript DOM';
+      bodyDoc.appendChild(h1Doc);
 
       let mainDiv = document.createElement('div');
       mainDiv.className='main-content';
@@ -98,6 +98,13 @@
         let linhasLista = document.createElement('li');
         linhasLista.innerText = listaNumeros[index];
         naoOrdenada.appendChild(linhasLista);
+      }
+
+      for (let indexH3 = 0; indexH3 < 3; indexH3 += 1) {
+
+        let h3Doc = document.createElement('h3');
+        mainDiv.appendChild(h3Doc);
+
       }
 
 
