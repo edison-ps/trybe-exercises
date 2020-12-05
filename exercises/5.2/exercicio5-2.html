@@ -79,13 +79,29 @@
       mainDiv.appendChild(leftDiv);
 
       righDiv = document.createElement('div');
-      righDiv.className = 'righ-content';
+      righDiv.className = 'right-content';
       mainDiv.appendChild(righDiv);
 
       imageDiv = document.createElement('img');
       imageDiv.className = 'small-image';
       imageDiv.src='https://picsum.photos/200';
       leftDiv.appendChild(imageDiv);
+
+      let listaNumeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      let naoOrdenada = document.createElement('ul');
+      righDiv.appendChild(naoOrdenada);
+
+      
+
+      for (let index = 0; index < listaNumeros.length; index += 1) {
+
+        let linhasLista = document.createElement('li');
+        linhasLista.innerText = listaNumeros[index];
+        naoOrdenada.appendChild(linhasLista);
+      }
+
+
+
 
     
 
