@@ -124,6 +124,19 @@
 
       centerDiv.parentNode.style.background='green'
 
+      listRemove = document.querySelectorAll('li');
+
+      for (let index = 0; index < listRemove.length; index += 1) {
+
+        if (index >= 8) {
+
+            naoOrdenada.removeChild(listRemove[index]);
+
+        }
+
+}
+
+    
 
     
 
