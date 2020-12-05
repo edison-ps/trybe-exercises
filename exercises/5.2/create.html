@@ -12,6 +12,23 @@
     </div>
     </div>
     <script> 
+
+        let divPai = document.querySelector('#pai');
+        let irmao = document.createElement('div');
+        irmao.id  = 'novoIrmao';
+        divPai.appendChild(irmao);
+
+        let ondeEsta = document.querySelector('#elementoOndeVoceEsta');
+        let elementoNovo = document.createElement('div');
+        elementoNovo.id = 'novoElemento';
+        ondeEsta.appendChild(elementoNovo);
+
+        let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+        let neto = document.createElement('div');
+        neto.id = 'neto';
+        primeiroFilhoDoFilho.appendChild(neto);
+
+        document.querySelector("#neto").parentNode.parentNode.nextElementSibling;
     
 
     </script>
