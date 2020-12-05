@@ -65,6 +65,14 @@
       let mainDiv = document.createElement('div');
       mainDiv.className='main-content';
       bodyDoc.appendChild(mainDiv);
+
+      let centerDiv =  document.createElement('div');
+      centerDiv.className = 'center-content';
+      mainDiv.appendChild(centerDiv);
+
+      paragraph = document.createElement('p');
+      paragraph.innerText='Isto é um teste de HTML dinâmico'
+      centerDiv.appendChild(paragraph);
     
 
     </script>
