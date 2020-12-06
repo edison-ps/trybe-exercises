@@ -10,6 +10,16 @@ function createDaysOfTheWeek() {
       weekDaysList.appendChild(dayListItem);
     };
   };
+
+  function makeHoliday (holidaySting) {
+
+    let docButtons = document.querySelector('.buttons-container');
+    let holidayButton = document.createElement('button');
+    holidayButton.innerText = holidaySting;
+    holidayButton.id = 'btn-holiday';
+    docButtons.appendChild(holidayButton);
+
+  }
   
   createDaysOfTheWeek();
   
@@ -38,3 +48,5 @@ function createDaysOfTheWeek() {
     docDays.appendChild(addDays);
 
   }
+
+  makeHoliday('Feriados');
