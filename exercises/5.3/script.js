@@ -38,6 +38,15 @@ function createDaysOfTheWeek() {
     taskDiv.style.backgroundColor = color;
     taskClass.appendChild(taskDiv);
   }
+
+  function makeTask (taskString){
+
+    const taskClass = document.querySelector('.my-tasks');
+    const taskSpan = document.createElement('span');
+    taskSpan.innerText = taskString;
+    taskClass.appendChild(taskSpan);
+
+  }
   
   createDaysOfTheWeek();
   
@@ -126,16 +135,20 @@ zoomInOut.addEventListener('mouseout', function (eventDay) {
     
 });
 
+/*
 const addTask = document.querySelector('#btn-add');
 const taskTexto = document.querySelector('#task-input');
 const taskClass = document.querySelector('.my-tasks');
 addTask.addEventListener('click', function () {
-  console.log(taskTexto.value);
   const taskSpan = document.createElement('span');
   taskSpan.innerText = taskTexto.value;
   taskClass.appendChild(taskSpan);
 });
 
+*/
+makeTask ('Cozinhar')
 colorTask('green');
+
+
 
 
