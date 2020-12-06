@@ -54,10 +54,10 @@ function createDaysOfTheWeek() {
   }
 
   makeHoliday('Feriados');
-  const btnHolyday = document.querySelector('#btn-holiday');
+  const btnHoliday = document.querySelector('#btn-holiday');
   let displayHoliday = false;
 
-  btnHolyday.addEventListener('click', function () {
+  btnHoliday.addEventListener('click', function () {
       const holidayBackground = document.querySelectorAll('.holiday');
 
       for (let index = 0; index < holidayBackground.length; index += 1) {
@@ -80,3 +80,29 @@ function createDaysOfTheWeek() {
   });
 
   makeFriday('Sexta-feira');
+  const btnFriday = document.querySelector('#btn-friday');
+  let displayFriday = false;
+  let listaFriday = [];
+
+  btnFriday.addEventListener('click', function () {
+      const fridayText = document.querySelectorAll('.friday');
+
+      for (let index = 0; index < fridayText.length; index += 1) {
+
+        if (displayFriday) {
+          fridayText[index].innerText = listaFriday[index];
+        }
+        else {
+          listaFriday[index] = fridayText[index].innerText;
+          fridayText[index].innerText = 'SEXTOU !!';
+        }
+    }
+
+    if (displayFriday) {
+      displayFriday  = false;
+    }
+    else {
+      displayFriday  = true;
+    }
+
+  });
