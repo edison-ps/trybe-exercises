@@ -129,9 +129,9 @@ zoomInOut.addEventListener('mouseover', function (eventDay) {
     
 });
 
-//const zoomOut = document.querySelector('#days');
 zoomInOut.addEventListener('mouseout', function (eventDay) {
   eventDay.target.style.fontSize = '20px'
+  flagSelect = false;
     
 });
 
@@ -161,11 +161,30 @@ taskSelect.addEventListener('click', function() {
     taskSelect.className = 'task';
 
   }
-
-  console.log(taskSelect.className);
-
-
 });
+let flagSelect = false;
+zoomInOut.addEventListener('click', function (eventColor) {
+
+  if (taskSelect.className == 'task selected'&& flagSelect == false) {
+    
+    eventColor.target.style.color = 'green';
+    console.log(taskSelect.className);
+    flagSelect = true;
+  }
+   else {
+
+    if (taskSelect.className == 'task selected'&& flagSelect == true) {
+      eventColor.target.style.color= 'rgb(119,119,119)';
+      flagSelect = false;
+    }
+
+  }
+
+
+    
+});
+
+
 
 
 
