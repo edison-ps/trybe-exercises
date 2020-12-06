@@ -104,5 +104,16 @@ function createDaysOfTheWeek() {
     else {
       displayFriday  = true;
     }
-
   });
+
+const zoomInOut = document.querySelector('#days');
+zoomInOut.addEventListener('mouseover', function (eventDay) {
+  eventDay.target.style.fontSize = '40px'
+    
+});
+
+//const zoomOut = document.querySelector('#days');
+zoomInOut.addEventListener('mouseout', function (eventDay) {
+  eventDay.target.style.fontSize = '20px'
+    
+});
