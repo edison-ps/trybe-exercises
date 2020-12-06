@@ -11,13 +11,23 @@ function createDaysOfTheWeek() {
     };
   };
 
-  function makeHoliday (holidaySting) {
+  function makeHoliday (holidayString) {
 
     let docButtons = document.querySelector('.buttons-container');
     let holidayButton = document.createElement('button');
-    holidayButton.innerText = holidaySting;
+    holidayButton.innerText = holidayString;
     holidayButton.id = 'btn-holiday';
     docButtons.appendChild(holidayButton);
+
+  }
+
+  function makeFriday (fridayString) {
+
+    let docButtons = document.querySelector('.buttons-container');
+    let fridayButton = document.createElement('button');
+    fridayButton.innerText = fridayString;
+    fridayButton.id = 'btn-friday';
+    docButtons.appendChild(fridayButton);
 
   }
   
@@ -68,3 +78,5 @@ function createDaysOfTheWeek() {
     }
 
   });
+
+  makeFriday('Sexta-feira');
