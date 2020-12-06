@@ -117,3 +117,15 @@ zoomInOut.addEventListener('mouseout', function (eventDay) {
   eventDay.target.style.fontSize = '20px'
     
 });
+
+const addTask = document.querySelector('#btn-add');
+const taskTexto = document.querySelector('#task-input');
+const taskClass = document.querySelector('.my-tasks')
+addTask.addEventListener('click', function () {
+  console.log(taskTexto.value);
+  const taskSpan = document.createElement('span');
+  taskSpan.innerText = taskTexto.value;
+  taskClass.appendChild(taskSpan);
+    
+});
+
