@@ -149,6 +149,24 @@ addTask.addEventListener('click', function () {
 makeTask ('Cozinhar')
 colorTask('green');
 
+const taskSelect = document.querySelector('.my-tasks div');
+
+taskSelect.addEventListener('click', function() {
+
+  if (taskSelect.className == 'task') {
+
+    taskSelect.className = 'task selected'
+  }
+  else {
+    taskSelect.className = 'task';
+
+  }
+
+  console.log(taskSelect.className);
+
+
+});
+
 
 
 
