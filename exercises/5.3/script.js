@@ -135,17 +135,17 @@ zoomInOut.addEventListener('mouseout', function (eventDay) {
     
 });
 
-/*
+
 const addTask = document.querySelector('#btn-add');
 const taskTexto = document.querySelector('#task-input');
-const taskClass = document.querySelector('.my-tasks');
+const taskContainer = document.querySelector('.tasks-container');
 addTask.addEventListener('click', function () {
-  const taskSpan = document.createElement('span');
-  taskSpan.innerText = taskTexto.value;
-  taskClass.appendChild(taskSpan);
+  const taskParagraph = document.createElement('p');
+  taskParagraph.innerText = taskTexto.value;
+  taskContainer.appendChild(taskParagraph);
 });
 
-*/
+
 makeTask ('Cozinhar')
 colorTask('green');
 
