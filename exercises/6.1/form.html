@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="node_modules/pikaday/css/pikaday.css">
 </head>
 <body>
-    <header>
+    <header class="section">
         <h1 class="title has-text-centered">Cadastro de Currículos</h1>
     </header>
-    <section class="section">
+    <section>
         <form action="" method="GET">
-            <div> 
+            <div class="section"> 
                 <legend>Dados Pessoais</legend>
                 <div class="field">
                     <label class="label" for="name">Nome:</label>
@@ -76,7 +76,7 @@
                     <input class="radio" type="radio" name="housing" value="house" id="apart-id">
                 </div>
             </div>
-            <fieldset>
+            <div class="section">
                 <legend>Último Emprego</legend>
                 <div class="field">
                     <label class="label" for="curriculim">Resumo do currículo:</label>
@@ -95,10 +95,11 @@
                     <input class="input is-rounded" type="text" id="datepicker" name="date" maxlength="10" size="10" required>
                 </div>
 
-            </fieldset>
-            <br><br>
-            <button class="button is-rounded is-success" type="submit">Enviar</button>
-            <button class="button is-rounded is-danger" type="reset">Limpar</button>
+            </div>
+            <div class="section">
+                <button class="button is-rounded is-success" type="submit">Enviar</button>
+                <button class="button is-rounded is-danger" type="reset">Limpar</button>
+            </div>
         </form>
     </section>
     <script src="node_modules/pikaday/pikaday.js"></script>
