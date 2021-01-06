@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de currículos</title>
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Cadastro de Currículos</h1>
+    </header>
+    <section class="section">
+        <form action="" method="GET">
+            <div> 
+                <legend>Dados Pessoais</legend>
+                <div class="field">
+                    <label class="label" for="name">Nome:</label>
+                    <input class="input is-rounded" type="text" name="name" maxlength="40" size="40" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="email">E-Mail:</label>
+                    <input class="input is-rounded" type="text" name="email" maxlength="50" size="50" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="cpf">CPF:</label>
+                    <input class="input is-rounded" type="text" name="cpf" maxlength="11" size="11" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="address">Endereço:</label>
+                    <input class="input is-rounded" type="text" name="address" maxlength="200" size="50" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="city">Cidade:</label>
+                    <input class="input is-rounded" type="text" name="city" maxlength="28" size="28" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="state">UF:</label>
+                    <div class="select is-rounded">
+                        <select name="state" id="" required>
+                            <option value="ac">AC</option>
+                            <option value="al">AL</option>
+                            <option value="am">AM</option>
+                            <option value="ap">AP</option>
+                            <option value="ba">BA</option>
+                            <option value="ce">CE</option>
+                            <option value="df">DF</option>
+                            <option value="es">ES</option>
+                            <option value="go">GO</option>
+                            <option value="ma">MA</option>
+                            <option value="mg">MG</option>
+                            <option value="ms">MS</option>
+                            <option value="mt">MT</option>
+                            <option value="pa">PA</option>
+                            <option value="pb">PB</option>
+                            <option value="pe">PE</option>
+                            <option value="pi">PI</option>
+                            <option value="pr">PR</option>
+                            <option value="rj">RJ</option>
+                            <option value="rn">RN</option>
+                            <option value="ro">RO</option>
+                            <option value="rr">RR</option>
+                            <option value="rs">RS</option>
+                            <option value="sc">SC</option>
+                            <option value="se">SE</option>
+                            <option value="sp">SP</option>
+                            <option value="to">TO</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control">
+                    <label class="radio" for="house-id">Casa</label>
+                    <input class="radio" type="radio" name="housing" value="house" id="house-id" checked>
+                    <label class="radio" for="apart-id">Apartamento</label>
+                    <input class="radio" type="radio" name="housing" value="house" id="apart-id">
+                </div>
+            </div>
+            <fieldset>
+                <legend>Último Emprego</legend>
+                <div class="field">
+                    <label class="label" for="curriculim">Resumo do currículo:</label>
+                </div>
+                <textarea class="textarea" name="" id="curriculum" cols="50" rows="10" required></textarea>
+                <div class="field">
+                    <label class="label" for="office">Cargo:</label>
+                    <input class="input is-rounded" type="text" name="office" maxlength="40" size="28" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="office-description">Descrição do cargo:</label>
+                    <input class="input is-rounded" type="text" name="office-description" maxlength="500" size="50" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="date">Inicio:</label>
+                    <input class="input is-rounded" type="text" name="date" maxlength="10" size="10" required>
+                </div>
+
+            </fieldset>
+            <br><br>
+            <button class="button is-rounded is-success" type="submit">Enviar</button>
+            <button class="button is-rounded is-danger" type="reset">Limpar</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>
