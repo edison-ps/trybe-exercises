@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de currículos</title>
     <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/pikaday/css/pikaday.css">
 </head>
 <body>
     <header>
-        <h1 class="title">Cadastro de Currículos</h1>
+        <h1 class="title has-text-centered">Cadastro de Currículos</h1>
     </header>
     <section class="section">
         <form action="" method="GET">
@@ -90,8 +91,8 @@
                     <input class="input is-rounded" type="text" name="office-description" maxlength="500" size="50" required>
                 </div>
                 <div class="field">
-                    <label class="label" for="date">Inicio:</label>
-                    <input class="input is-rounded" type="text" name="date" maxlength="10" size="10" required>
+                    <label class="label" for="datepicker">Inicio:</label>
+                    <input class="input is-rounded" type="text" id="datepicker" name="date" maxlength="10" size="10" required>
                 </div>
 
             </fieldset>
@@ -100,7 +101,7 @@
             <button class="button is-rounded is-danger" type="reset">Limpar</button>
         </form>
     </section>
-
-    
+    <script src="node_modules/pikaday/pikaday.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
