@@ -1,8 +1,11 @@
 body {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 0 10px;
 
 }
 h1 {
-
+    font-size: 30px;
 }
 h2 {
 
@@ -10,6 +13,7 @@ h2 {
 
 img {
     max-width: 100%;
+    padding: 20px 0;
 }
 
 figure {
