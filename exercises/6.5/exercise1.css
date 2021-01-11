@@ -19,3 +19,20 @@ img {
 figure {
     margin: 0;
 }
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: gray;
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    body figure {
+        background-color: red;
+        display: flex;
+    }
+}
